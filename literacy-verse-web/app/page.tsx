@@ -319,7 +319,7 @@ export default function HomePage() {
   return (
     <main className="app-shell">
       <div className="ambient ambient-one" /><div className="ambient ambient-two" />
-      <header className="topbar">
+      <header className={`topbar ${mobileMenu ? "mobile-menu-open" : ""}`}>
         <button className="brand" onClick={() => navigate("home")} aria-label="Literacy Verse home">
           <span className="brand-mark"><BookOpen size={23} strokeWidth={2.1} /><span className="brand-spark">✦</span></span>
           <span className="brand-words"><strong>literacy<span>verse</span></strong><small>LEARN · SHARE · GROW</small></span>
